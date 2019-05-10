@@ -4,8 +4,7 @@ var isPrivacy = (Math.random() > 0.5);
 var isIntel = Boolean(1 - isPrivacy);
 
 var condIndex = Math.floor(Math.random() * 10);
-// var condIndex = Math.floor(Math.random() * 2);
-// condIndex *= 4;
+if (condIndex == 7) { condIndex = 9}
 // var condIndex = Math.floor(Math.random() * 3);        /* Control the condition: Strong blur level*/
 
 var imgCond = parseInt(condIndex / 4);
