@@ -1,7 +1,7 @@
 
 var isPilot = true;
-var isPrivacy = (Math.random() > 0.5);
-// var isPrivacy = 0;                                        /* control the condition */
+// var isPrivacy = (Math.random() > 0.5);
+var isPrivacy = 1;                                        /* control the condition */
 var isIntel = Boolean(1 - isPrivacy);
 
 // var condIndex = Math.floor(Math.random() * 10);
