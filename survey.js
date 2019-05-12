@@ -1,11 +1,14 @@
 
 var isPilot = true;
-var isPrivacy = (Math.random() > 0.5);
+// var isPrivacy = (Math.random() > 0.5);
+var isPrivacy = 0;                                        /* control the condition */
 var isIntel = Boolean(1 - isPrivacy);
 
-var condIndex = Math.floor(Math.random() * 10);
-// if (condIndex == 7) { condIndex = 9}
-// var condIndex = Math.floor(Math.random() * 3);        /* Control the condition: Strong blur level*/
+// var condIndex = Math.floor(Math.random() * 10);
+var condIndex = Math.floor(Math.random() * 3);        /* Control the condition: Strong blur level*/
+if (condIndex == 0) { condIndex = 3 }
+else if (condIndex == 1) { condIndex = 5 }
+else { condIndex = 8 }
 
 var imgCond = parseInt(condIndex / 4);
 var camCond = condIndex % 4;
