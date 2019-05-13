@@ -12,7 +12,7 @@ if (rand == 0) {
   isPrivacy = 1;
 }
 else if (rand == 1) { 
-  condIndex = 6;
+  condIndex = 9;
   isPrivacy = 0;
 }
 // var condIndex = 9;        /* control the condition */
