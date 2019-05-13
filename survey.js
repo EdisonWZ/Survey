@@ -1,17 +1,24 @@
 
 var isPilot = true;
-// var isPrivacy = (Math.random() > 0.5);
-var isPrivacy = 1;                                        /* control the condition */
-var isIntel = Boolean(1 - isPrivacy);
+
 
 // var condIndex = Math.floor(Math.random() * 10);
 // var condIndex = Math.floor(Math.random() * 8) + 1;
-var condIndex = Math.floor(Math.random() * 4) + 5;        /* Control the condition: Strong blur level*/
-if (condIndex == 5) { condIndex = 2 }
-// else if (condIndex == 2) { condIndex = 6 }
-// else { condIndex = 7 }
-// var condIndex = 9;
+var rand = Math.floor(Math.random() * 2);
+var condIndex;        /* Control the condition: Strong blur level*/
+var isPrivacy;
+if (rand == 0) { 
+  condIndex = 2;
+  isPrivacy = 1;
+}
+else if (rand == 1) { 
+  condIndex = 6;
+  isPrivacy = 0;
+}
+// var condIndex = 9;        /* control the condition */
 
+// var isPrivacy = (Math.random() > 0.5);              
+var isIntel = Boolean(1 - isPrivacy);
 
 var imgCond = parseInt(condIndex / 4);
 var camCond = condIndex % 4;
