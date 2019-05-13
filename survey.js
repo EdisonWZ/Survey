@@ -1,15 +1,15 @@
 
 var isPilot = true;
-var isPrivacy = (Math.random() > 0.5);
-// var isPrivacy = 0;                                        /* control the condition */
+// var isPrivacy = (Math.random() > 0.5);
+var isPrivacy = 1;                                        /* control the condition */
 var isIntel = Boolean(1 - isPrivacy);
 
 // var condIndex = Math.floor(Math.random() * 10);
 // var condIndex = Math.floor(Math.random() * 8) + 1;
-var condIndex = Math.floor(Math.random() * 3);        /* Control the condition: Strong blur level*/
-if (condIndex == 0) { condIndex = 2 }
-else if (condIndex == 1) { condIndex = 6 }
-else { condIndex = 7 }
+var condIndex = Math.floor(Math.random() * 3) + 6;        /* Control the condition: Strong blur level*/
+// if (condIndex == 1) { condIndex = 6 }
+// else if (condIndex == 2) { condIndex = 6 }
+// else { condIndex = 7 }
 // var condIndex = 9;
 
 
