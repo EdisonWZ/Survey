@@ -2,22 +2,10 @@
 var isPilot = true;
 
 
-// var condIndex = Math.floor(Math.random() * 10);
-// var condIndex = Math.floor(Math.random() * 8) + 1;
-// var rand = Math.floor(Math.random() * 2);
-// var condIndex;        /* Control the condition: Strong blur level*/
-var isPrivacy = 1;
-// if (rand == 0) { 
-//   condIndex = 2;
-//   isPrivacy = 1;
-// }
-// else if (rand == 1) { 
-//   condIndex = 9;
-//   isPrivacy = 0;
-// }
-var condIndex = 8;        /* control the condition */
+var condIndex = Math.floor(Math.random() * 10);
+// var condIndex = 8;        /* control the condition */
 
-// var isPrivacy = (Math.random() > 0.5);              
+var isPrivacy = (Math.random() > 0.5);              
 var isIntel = Boolean(1 - isPrivacy);
 
 var imgCond = parseInt(condIndex / 4);
