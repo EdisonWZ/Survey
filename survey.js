@@ -8315,9 +8315,9 @@ function addGridScore(){
 
 /* Sending Result */
 function sendDataToServer(survey) {
-    survey.sendResult('d6f659c0-c240-4f24-afd5-b0f3d7678b9a');          /* For runtime */
+//     survey.sendResult('d6f659c0-c240-4f24-afd5-b0f3d7678b9a');          /* For runtime */
     // survey.sendResult('f8f2dbd5-79d2-49cc-9e5e-3a8e5b17716e');            /* For pilot*/
-    // survey.sendResult('e0d67775-bf80-4ee4-b307-15fe60ab670f');          /* For debug*/
+    survey.sendResult('e0d67775-bf80-4ee4-b307-15fe60ab670f');          /* For debug*/
 }
 
 /* For Timer */
